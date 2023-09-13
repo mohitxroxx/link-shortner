@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>URL Shortener</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Shorten Your URLs Quickly</h2>
+            <p>Turn long links into short, easy-to-share URLs.</p>
+        </div>
+    </section>
+    <section class="url-shortener">
+        <div class="container">
+            <h3>Enter a URL to shorten:</h3>
+            <form id="shorten-form" method="POST" action="search.php">
+                <input type="url" id="original-url" name="original-url" placeholder="Enter your URL" required>
+                <button type="submit">Shorten</button>
+            </form>
+            <div id="shortened-urls">
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
